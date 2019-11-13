@@ -1,22 +1,61 @@
-.App {
-  text-align: center;
+
+
+.appWrapper {
+    width: 360px;
+    margin: 20px auto;
 }
 
-.App-logo {
-  height: 40vmin;
+.pages {
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table {
+    border-collapse: collapse;
+    font-size: 20px;
+    margin:20px auto;
 }
 
-.App-link {
-  color: #09d3ac;
+td {
+    border: 1px solid black;
+    padding: 7px;  
 }
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    font-weight: 700;
+    color: red;  
+}
+
+button:active {
+    color: red;
+    background: yellow;
+}
+
+.checked {
+    color: green;
+    font-weight: bold;
+}
+
+@media (max-width: 360px) { 
+    button {
+        padding: 5px;
+        font-size: 17px;       
+    }
+    
+    .appWrapper {
+        width: 320px;
+        margin: 10px auto;
+    }
+    
+    td {
+        padding: 6px;
+    }
+}
+
